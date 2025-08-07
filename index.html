@@ -15,6 +15,7 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/vue@3"></script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -33,7 +34,7 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#site-info">Site Info</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#fun-stuff">Fun Stuff</a></li>
                 </ul>
             </div>
         </nav>
@@ -44,39 +45,55 @@
                 <div class="resume-section-content">
                     <h1 class="mb-0">
                         Isaac
-                        <span class="text-primary">Jacobsohn</span>
+                        <span class="text-primary" id="output"></span>
+                        <script>
+                            const text = "Jacobsohn";
+                            let i = 0;
+
+                            function typeText() {
+                                if (i < text.length) {
+                                    $('#output').append(text[i]);
+                                    i++;
+                                    setTimeout(typeText, 150);
+                                } 
+                            }
+
+                            $(document).ready(typeText);
+                        </script>
                     </h1>
                     <div class="subheading mb-5">
-                        420 E Stoneridge Dr · Milford, OH 45150 · (513) 658-8152
+                        Cincinnati, OH · (513) 658-8152
                         <div id="email" onclick="showhideEmail()">Show my email</div>
-                        <script src="email.js"></script>
+                        <script src="js/email.js"></script>
                     </div>
                     <p id="visit-message"></p>
                     <script>
                         function getCookie(name) {
-                          const value = `; ${document.cookie}`;
-                          const parts = value.split(`; ${name}=`);
-                          if (parts.length === 2) return parts.pop().split(';').shift();
+                            const value = `; ${document.cookie}`;
+                            const parts = value.split(`; ${name}=`);
+                            if (parts.length === 2) return parts.pop().split(';').shift();
                         }
 
                         function setCookie(name, value, days) {
-                          const expires = new Date(Date.now() + days * 864e5).toUTCString();
-                          document.cookie = `${name}=${value}; expires=${expires}; path=/`;
+                            const expires = new Date(Date.now() + days * 864e5).toUTCString();
+                            document.cookie = `${name}=${value}; expires=${expires}; path=/`;
                         }
 
                         const visitMessage = document.getElementById('visit-message');
                         const lastVisit = getCookie('lastVisit');
 
                         if (lastVisit) {
-                          visitMessage.textContent = `Welcome back! Your last visit was ${new Date(lastVisit).toLocaleString()}.`;
+                            visitMessage.textContent = `Welcome back! Your last visit was ${new Date(lastVisit).toLocaleString()}.`;
                         } else {
-                          visitMessage.textContent = "Welcome to my homepage!";
+                            visitMessage.textContent = "Welcome to my homepage!";
                         }
 
                         // Update the cookie with the current timestamp
                         setCookie('lastVisit', new Date().toISOString(), 365);
                     </script>
                     <p class="lead mb-5">I'm a computer science student with a strong passion for robotics engineering. I like to bridge the gap between hardware and software, as well as design hardware solutions.</p>
+                    <p>
+                        Here is some things I am working on in my <a href="waph.html">Web Application Programming and Hacking</a> class!
                     <div class="social-icons">
                         <a class="social-icon" href="https://linkedin.com/in/isaac-jacobsohn/"><i class="fab fa-linkedin-in"></i></a>
                         <a class="social-icon" href="hhttps://github.com/IsaacJacobsohn"><i class="fab fa-github"></i></a>
@@ -284,9 +301,9 @@
             </section>
             <hr class="m-0" />
             <!-- Interesting Stuff-->
-            <section class="resume-section" id="site-info">
+            <section class="resume-section" id="fun-stuff">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Interesting Stuff</h2>
+                    <h2 class="mb-5">Fun Stuff</h2>
                     <div class="subheading mb-3">Here's a Random Cat Fact!</div>
                     <div id='cat-fact'></div>
                      <input class="button round" type="button" value="Click here for a cat fact" onclick="GenerateCatFact()">
@@ -299,6 +316,37 @@
                             );
                         }
                     </script>
+                    <div id='dog-image'>
+                        <br>
+                        <div class="subheading mb-3">Here's a Random Dog Image!</div>
+                        <button @click="GenerateDogImg">Click Here for a dog image</button>
+                        <div v-if="imageUrl">
+                            <img :src="imageUrl" style="width:300px; height:auto;"/>
+                        </div>
+                    </div>
+                    <script>
+                        const { createApp } = Vue;
+
+                        createApp({
+                            data() {
+                                return {
+                                    imageUrl: ''
+                                };
+                            },
+                            methods: {
+                                async GenerateDogImg() {
+                                    var response = await fetch("https://random.dog/woof.json"); 
+                                    var data = await response.json();
+                                    while (data.url.slice(-3) == 'mp4') {
+                                        response = await fetch("https://random.dog/woof.json"); 
+                                        data = await response.json();
+                                    }
+                                    this.imageUrl = data.url;
+                                }
+                            }
+                        }).mount('#dog-image')
+                    </script>
+                    <br>
                     <div class="subheading mb-3">Here's the Canada-Dollar Exchange!</div>
                     <div id='exchange'></div>
                      <input class="button round" type="button" value="Click here for then Canada-Dollar Exchange" onclick="GenerateCanadaDollar()">
@@ -312,17 +360,9 @@
                             );
                         }
                     </script>
-                    <img id='comic' src=""/>
-                    <script>
-                        fetch("xkcd.vercel.app/?comic=latest")
-                        .then(response => {
-                            return response.json();
-                        })
-                        .then(data => {
-                            const comicImg = document.getElementById('comic');
-                            comicImg.src = data.img;
-                        });
-                    </script>
+                    <br>
+                    <br>
+                    <div class="subheading mb-3">Here's a Digital Clock!</div>
                     <div id="digit-clock"></div>
                     <script>
                         function displayTime() {
@@ -330,6 +370,8 @@
                         }
                         setInterval(displayTime, 500);
                     </script>
+                    <br>
+                    <div class="subheading mb-3">Here's an Analog Clock!</div>
                     <canvas id="analog-clock" width="150" height="150" style="background-color:#999"></canvas>
                     <script src="https://waph-phung.github.io/clock.js"></script>
                     <script>
@@ -346,9 +388,10 @@
                             drawTime(ctx, radius);
                         }
                     </script>
+                    <br>
+                    <div class="subheading mb-3">Here's a New Joke Every Minute!</div>
                     <div id="single-setup"></div>
                     <div id="delivery"></div>
-                    <input class="button round" type="button" value="Generate Joke" onclick="GenerateJoke()">
                     <script>
                         function GenerateJoke() {
                             $.get("https://v2.jokeapi.dev/joke/Any",
@@ -364,10 +407,20 @@
                                 }
                             );
                         }
+                        GenerateJoke();
+                        setInterval(GenerateJoke, 60000);
                     </script>
-                    <p class="lead mb-5">Here are all of the people who have visited my page!</p>
+                    <br>
+                    <div class="subheading mb-3">Here are all of the people who have visited my page!</div>
                     <a href="https://info.flagcounter.com/pXDH"><img src="https://s01.flagcounter.com/count2/pXDH/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_1/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
-                    <!--022e84477ea0464d9d5971ae307031a6-->
+                    <div style="padding-top: 3rem;">
+                        <div class="subheading mb-3">Disclaimer</div>
+                    </div>
+                    <div>
+                        <p>
+                            Third party services are used to generate the cat facts, random dog image, flag counter, and jokeapi. These third party services are meowfacts, random.dog, flagcounter, and jokeapi. I am not responsible for any generated contents from these third party services.
+                        </p>
+                    </div>
                 </div>
             </section>
         </div>
