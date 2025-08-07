@@ -15,7 +15,9 @@
 ## Overview
 
 For project 1 I created a professional profile website and deployed it on github.io cloud service.
+
 Link to website: [Website Link](https://isaacjacobsohn.github.io/)
+
 Link to GitHub repository: [GitHub Repository](https://github.com/IsaacJacobsohn/IsaacJacobsohn.github.io)
 
 ### General Requirements
