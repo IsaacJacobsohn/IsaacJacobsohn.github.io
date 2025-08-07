@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Resume - Start Bootstrap Theme</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Isaac Jacobsohn</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="..." /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#activities">Activities</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#site-info">Site Info</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        Isaac
+                        <span class="text-primary">Jacobsohn</span>
+                    </h1>
+                    <div class="subheading mb-5">
+                        420 E Stoneridge Dr · Milford, OH 45150 · (513) 658-8152
+                        <div id="email" onclick="showhideEmail()">Show my email</div>
+                        <script src="email.js"></script>
+                    </div>
+                    <p id="visit-message"></p>
+                    <script>
+                        function getCookie(name) {
+                          const value = `; ${document.cookie}`;
+                          const parts = value.split(`; ${name}=`);
+                          if (parts.length === 2) return parts.pop().split(';').shift();
+                        }
+
+                        function setCookie(name, value, days) {
+                          const expires = new Date(Date.now() + days * 864e5).toUTCString();
+                          document.cookie = `${name}=${value}; expires=${expires}; path=/`;
+                        }
+
+                        const visitMessage = document.getElementById('visit-message');
+                        const lastVisit = getCookie('lastVisit');
+
+                        if (lastVisit) {
+                          visitMessage.textContent = `Welcome back! Your last visit was ${new Date(lastVisit).toLocaleString()}.`;
+                        } else {
+                          visitMessage.textContent = "Welcome to my homepage!";
+                        }
+
+                        // Update the cookie with the current timestamp
+                        setCookie('lastVisit', new Date().toISOString(), 365);
+                    </script>
+                    <p class="lead mb-5">I'm a computer science student with a strong passion for robotics engineering. I like to bridge the gap between hardware and software, as well as design hardware solutions.</p>
+                    <div class="social-icons">
+                        <a class="social-icon" href="https://linkedin.com/in/isaac-jacobsohn/"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="hhttps://github.com/IsaacJacobsohn"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Experience-->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Experience</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">CTI Clinical Trial & Consulting</h3>
+                            <div class="subheading mb-3">Intern</div>
+                            <p>
+                                <ul>
+                                    <li>Preparing interactive dashboards and visualizations using Tableau for clients</li>
+                                    <li>Mapping Electronic Data Capture data to internal database for streamlined reporting</li>
+                                    <li>Performing validation tests to ensure working sustem functionality and accuracy after updates</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">January 2025 - Present</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Freelance Product Designer - Independent Client</h3>
+                            <div class="subheading mb-3">Product Designer</div>
+                            <p>
+                                <ul>
+                                    <li>Designing a custom product tailored to client specifications and patents</li>
+                                    <li>Collaborating directly with the client to iterate on design,functionality, and user experience</li>
+                                    <li>Managing project scope and deliverables while balancing full-time employment</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">February 2025 - Present</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Target</h3>
+                            <div class="subheading mb-3">Guest Advocate</div>
+                            <p>
+                                <ul>
+                                    <li>Scanned and bagged groceries for 100+ customers per day</li>
+                                    <li>Delivered Order Pickup and maintained an average of under 2-minute delivery time</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">October 2021 - October 2022</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Education-->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Education</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">University of Cincinnati</h3>
+                            <div class="subheading mb-3">Bachelor of Science</div>
+                            <div>Computer Science</div>
+                            <p>GPA: 3.857</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Graduating: May 2028</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">The Ohio State University</h3>
+                            <div class="subheading mb-3">Bachelor of Science</div>
+                            <div>Candidate for Computer Science & Engineering</div>
+                            <p>GPA: 3.783</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">August 2023 - May 2024</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Milford High School</h3>
+                            <div class="subheading mb-3">Honors Diploma</div>
+                            <p>GPA: 3.87</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">August 2019 - May 2023</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Activities-->
+            <section class="resume-section" id="activities">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Activities</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Bearcat Marching Band</h3>
+                            <div class="subheading mb-3">Member</div>
+                            <p>
+                                <ul>
+                                    <li>Marched, memorized, and performed multiple songs and drills</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">August 2024 - Present</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">STEM Exploration and Engagement Scholar</h3>
+                            <div class="subheading mb-3">Member</div>
+                            <p>
+                                <ul>
+                                    <li>Attended weekly meetings and events relating to personal and community STEM growth</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">February 2025 - Present</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Guest Advocate</h3>
+                            <div class="subheading mb-3">Target</div>
+                            <p>
+                                <ul>
+                                    <li>Scanned and bagged groceries for 100+ customers per day</li>
+                                    <li>Delivered Order Pickup and maintained an average of under 2-minute delivery time</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">October 2021 - October 2022</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Skills-->
+            <section class="resume-section" id="skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Skills</h2>
+                    <div class="subheading mb-3">Programming Languages & Tools</div>
+                    <ul class="list-inline dev-icons">
+                        <style>
+                            .custom-icon {
+                                width: 1em; 
+                                height: 1em;
+                                fill: gray; 
+                                margin-bottom: 10px;
+                            }
+                          </style>
+                    	<li class="list-inline-item"><i class="fab fa-python"></i></li>
+                    	<li class="list-inline-item"><i class="fab fa-java"></i></li>
+                        <img class="custom-icon" src="assets/cplusplus.svg" alt="C++ Icon">
+                        <img class="custom-icon" src="assets/sql.svg" alt="C++ Icon">
+                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
+                    </ul>
+                    <div class="subheading mb-3">Workflow</div>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Mobile-First, Responsive Design
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Cross Browser Testing & Debugging
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Cross Functional Teams
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Agile Development & Scrum
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Interests-->
+            <section class="resume-section" id="interests">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Interests</h2>
+                    <p>Apart from being a computer science student, I enjoy most of my time being outdoors. In the fall I march as a clarinet in the University of Cincinnati Marching Band, whilst also enjoying watching UC's football games from within Nippert Stadium. In the summer and fall, I enjoy kayaking on the Little Miami river. From spring-fall, I also enjoy to hike, backpack, and camp.</p>
+                    <p class="mb-0">When indoors, I enjoy reading, playing video games with friends, and playing and/or listening to music. I am currently enjoying listening to the genre jazz samba.</p>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Awards-->
+            <section class="resume-section" id="awards">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Awards & Certifications</h2>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            High School Diploma with Honors
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Milford Marching Band Outstanding Senior Award
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            VEX Robotics World Competition Innovate Award
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Interesting Stuff-->
+            <section class="resume-section" id="site-info">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Interesting Stuff</h2>
+                    <div class="subheading mb-3">Here's a Random Cat Fact!</div>
+                    <div id='cat-fact'></div>
+                     <input class="button round" type="button" value="Click here for a cat fact" onclick="GenerateCatFact()">
+                    <script>
+                        function GenerateCatFact() {
+                            $.get("https://meowfacts.herokuapp.com/",
+                                function ( result ) {
+                                    $('#cat-fact').html(result.data);
+                                }
+                            );
+                        }
+                    </script>
+                    <div class="subheading mb-3">Here's the Canada-Dollar Exchange!</div>
+                    <div id='exchange'></div>
+                     <input class="button round" type="button" value="Click here for then Canada-Dollar Exchange" onclick="GenerateCanadaDollar()">
+                    <script>
+                        function GenerateCanadaDollar() {
+                            $.get("https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/od/rates_of_exchange?fields=country_currency_desc,exchange_rate,record_date&filter=country_currency_desc:in:(Canada-Dollar),record_date:gte:2025-06-01",
+                                function ( result ) {
+                                    console.log(result.data);
+                                    $('#exchange').html(result.data[0].exchange_rate + " from " + result.data[0].record_date);
+                                }
+                            );
+                        }
+                    </script>
+                    <img id='comic' src=""/>
+                    <script>
+                        fetch("xkcd.vercel.app/?comic=latest")
+                        .then(response => {
+                            return response.json();
+                        })
+                        .then(data => {
+                            const comicImg = document.getElementById('comic');
+                            comicImg.src = data.img;
+                        });
+                    </script>
+                    <div id="digit-clock"></div>
+                    <script>
+                        function displayTime() {
+                            document.getElementById('digit-clock').innerHTML = "Current time: " + new Date();
+                        }
+                        setInterval(displayTime, 500);
+                    </script>
+                    <canvas id="analog-clock" width="150" height="150" style="background-color:#999"></canvas>
+                    <script src="https://waph-phung.github.io/clock.js"></script>
+                    <script>
+                        var canvas = document.getElementById("analog-clock");
+                        var ctx = canvas.getContext("2d");
+                        var radius = canvas.height / 2;
+                        ctx.translate(radius, radius);
+                        radius = radius * 0.9;
+                        setInterval(drawClock, 1000);
+
+                        function drawClock() {
+                            drawFace(ctx, radius);
+                            drawNumbers(ctx, radius);
+                            drawTime(ctx, radius);
+                        }
+                    </script>
+                    <div id="single-setup"></div>
+                    <div id="delivery"></div>
+                    <input class="button round" type="button" value="Generate Joke" onclick="GenerateJoke()">
+                    <script>
+                        function GenerateJoke() {
+                            $.get("https://v2.jokeapi.dev/joke/Any",
+                                function ( result ) {
+                                    if (result.type == 'single') {
+                                        $("#single-setup").html("Joke: " + result.joke);
+                                        $("#delivery").html("");
+                                    }
+                                    else {
+                                        $("#single-setup").html("Setup: " + result.setup);
+                                        $("#delivery").html("Delivery: " + result.delivery);
+                                    }
+                                }
+                            );
+                        }
+                    </script>
+                    <p class="lead mb-5">Here are all of the people who have visited my page!</p>
+                    <a href="https://info.flagcounter.com/pXDH"><img src="https://s01.flagcounter.com/count2/pXDH/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_1/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
+                    <!--022e84477ea0464d9d5971ae307031a6-->
+                </div>
+            </section>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
