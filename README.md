@@ -10,13 +10,13 @@
 
 **Short-bio**: Isaac Jacobsohn has keen interests in robotics engineering and software development.
 
-![Isaac's headshot](assets/profile.jpg)
+![Isaac's headshot](assets/img/profile.jpg)
 
 ## Overview
 
 For project 1 I created a professional profile website and deployed it on github.io cloud service.
-Link to website: ![Website Link](https://isaacjacobsohn.github.io/)
-Link to GitHub repository: ![GitHub Repository](https://github.com/IsaacJacobsohn/IsaacJacobsohn.github.io)
+Link to website: [Website Link](https://isaacjacobsohn.github.io/)
+Link to GitHub repository: [GitHub Repository](https://github.com/IsaacJacobsohn/IsaacJacobsohn.github.io)
 
 ### General Requirements
 
