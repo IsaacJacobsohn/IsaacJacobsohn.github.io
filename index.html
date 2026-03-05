@@ -1,375 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Isaac Jacobsohn</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/vue@3"></script>
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Isaac Jacobsohn</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="..." /></span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#activities">Activities</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Isaac Jacobsohn</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename">Isaac Jacobsohn</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="https://www.linkedin.com/in/isaac-jacobsohn/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/IsaacJacobsohn" class="github"><i class="bi bi-github"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2>Isaac Jacobsohn</h2>
+        <p><span class="typed" data-typed-items="Robotics Engineer, Data Visualization Specialist, Software Engineer"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>A dedicated Computer Science undergraduate and Robotics and Intelligent Autonomous Systems graduate student at the University of Cincinnati. Academic background includes a Bachelor of Science in Computer Science and a Master of Engineering in Robotics and Intelligent Autonomous Systems, with both degrees expected in 2028.  </p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/full-profile-img.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 content">
+            <h2>Robotics & Software Engineer</h2>
+            <p class="fst-italic py-3">
+              I'm a robotics and software engineer focused on autonomous systems, intelligent control, and high-reliability software. My work spans ROS2, C++, Python, simulation, and multi-DOF manipulation, supported by a strong foundation in computer science and graduate-level robotics. I build clear, reproducible systems that integrate perception, planning, and control for real-world robotic applications.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>jacobsid@mail.uc.edu</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>(513)-658-8152</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Cincinnati, Ohio</span></li>
                 </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>April 5th, 2005</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>20</span></li>
+                </ul>
+              </div>
             </div>
-        </nav>
-        <!-- Page Content-->
-        <div class="container-fluid p-0">
-            <!-- About-->
-            <section class="resume-section" id="about">
-                <div class="resume-section-content">
-                    <h1 class="mb-0">
-                        Isaac
-                        <span class="text-primary" id="output"></span>
-                        <script>
-                            const text = "Jacobsohn";
-                            let i = 0;
-
-                            function typeText() {
-                                if (i < text.length) {
-                                    $('#output').append(text[i]);
-                                    i++;
-                                    setTimeout(typeText, 150);
-                                } 
-                            }
-
-                            $(document).ready(typeText);
-                        </script>
-                    </h1>
-                    <div class="subheading mb-5">
-                        Cincinnati, OH · (513) 658-8152
-                        <div id="email" onclick="showhideEmail()">Show my email</div>
-                        <script src="js/email.js"></script>
-                    </div>
-                    <p id="visit-message"></p>
-                    <script>
-                        function getCookie(name) {
-                            const value = `; ${document.cookie}`;
-                            const parts = value.split(`; ${name}=`);
-                            if (parts.length === 2) return parts.pop().split(';').shift();
-                        }
-
-                        function setCookie(name, value, days) {
-                            const expires = new Date(Date.now() + days * 864e5).toUTCString();
-                            document.cookie = `${name}=${value}; expires=${expires}; path=/`;
-                        }
-
-                        const visitMessage = document.getElementById('visit-message');
-                        const lastVisit = getCookie('lastVisit');
-
-                        if (lastVisit) {
-                            visitMessage.textContent = `Welcome back! Your last visit was ${new Date(lastVisit).toLocaleString()}.`;
-                        } else {
-                            visitMessage.textContent = "Welcome to my homepage!";
-                        }
-
-                        // Update the cookie with the current timestamp
-                        setCookie('lastVisit', new Date().toISOString(), 365);
-                    </script>
-                    <p class="lead mb-5">I'm a Computer Science undergraduate and Robotics and Intelligent Autonomous Systems graduate student at the University of Cincinnati. My academic journey begins in high school with my VEX robotics club, where I learned the fundamentals of robotics and computer science. Now, a student at the University of Cincinnati, I want to expand my knowledge of both disciplines.</p>
-                    <p>
-                    <div class="social-icons">
-                        <a class="social-icon" href="https://linkedin.com/in/isaac-jacobsohn/"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="https://github.com/IsaacJacobsohn"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Experience-->
-            <section class="resume-section" id="experience">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Experience</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">CTI Clinical Trial & Consulting</h3>
-                            <div class="subheading mb-3">Intern</div>
-                            <p>
-                                <ul>
-                                    <li>Creating visualizations detailing clinical studies using Tableau and custom SQL queries that are provided to clients.</li>
-                                    <li>Designing and running validation tests that ensure vital systems are working to specifications.</li>
-                                </ul>
-                            </p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">January 2025 - Present</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Target</h3>
-                            <div class="subheading mb-3">Guest Advocate</div>
-                            <p>
-                                <ul>
-                                    <li>Scanned and bagged groceries for 100+ customers per day</li>
-                                    <li>Delivered Order Pickup and maintained an average of under 2-minute delivery time</li>
-                                </ul>
-                            </p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">October 2021 - October 2022</span></div>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Education-->
-            <section class="resume-section" id="education">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Education</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">University of Cincinnati</h3>
-                            <div class="subheading mb-3">Master of Engineering / Bachelor of Science</div>
-                            <div>Robotics and Autonomous Intelligent Systems</div>
-                            <div>Computer Science</div>
-                            <p>GPA: 3.5</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Graduating: May 2028</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">The Ohio State University</h3>
-                            <div class="subheading mb-3">Bachelor of Science</div>
-                            <div>Candidate for Computer Science & Engineering</div>
-                            <p>GPA: 3.783</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2023 - May 2024</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Milford High School</h3>
-                            <div class="subheading mb-3">Honors Diploma</div>
-                            <p>GPA: 3.87</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2019 - May 2023</span></div>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Projects-->
-            <section class="resume-section" id="projects">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Projects</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Canatizer</h3>
-                            <div class="subheading mb-3">Project Leading</div>
-                            <p>
-                                <ul>
-                                    <li>Coordinating, designing, modeling, manufacturing, and testing an aluminum can cleaning product that fits client specifications.</li>
-                               </ul>
-                            </p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">February 2025 - Present</span></div>
-                    </div>
-                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Weather Application</h3>
-                            <div class="subheading mb-3">Python</div>
-                            <p>
-                                <ul>
-                                    <li>Retrieved data from the National Weather Service to display the weather of a user entered address.</li>
-                                </ul>
-                            </p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">July 2024 - September 2024</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Adaptive Stroller Addon</h3>
-                            <div class="subheading mb-3">Project Leading</div>
-                            <p>
-                                <ul>
-                                    <li>Designed, modeled, manufactured, and tested an adaptive motorized add-on to a large stroller.</li>
-                               </ul>
-                            </p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">October 2022 - June 2023</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">VEX Robotics Robot Autonomous</h3>
-                            <div class="subheading mb-3">C++</div>
-                            <p>
-                                <ul>
-                                    <li>Programmed and tested a 1-minute autonomous for a robot tasked with shooting discs into disc golf baskets.</li>
-                               </ul>
-                            </p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">May 2022 - May 2023</span></div>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Activities-->
-            <section class="resume-section" id="activities">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Activities</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Bearcat Marching Band</h3>
-                            <div class="subheading mb-3">Member</div>
-                            <p>
-                                <ul>
-                                    <li>Marching, memorizing, and performing multiple songs and drills per game.</li>
-                                </ul>
-                            </p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2023 - May 2024</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">STEM Exploration and Engagement Scholar</h3>
-                            <div class="subheading mb-3">Member</div>
-                            <p>
-                                <ul>
-                                    <li>Attended weekly meetings and events relating to personal and community STEM growth.</li>
-                                </ul>
-                            </p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">February 2025 - Present</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">VEX Robotics</h3>
-                            <div class="subheading mb-3">Senior Captain</div>
-                            <p>
-                                <ul>
-                                    <li>Coordinated collaboration among 7 teams, explained programming concepts to team programmers, and coached team leaders how to organize their teams effectively.</li>
-                                </ul>
-                            </p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">May 2022 - May 2023</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">VEX Robotics</h3>
-                            <div class="subheading mb-3">Team Leader</div>
-                            <p>
-                                <ul>
-                                    <li>Led teams of 5-7 members in designing, building, and programming robots, planned overall meeting goals, and communicated with members to schedule meeting days.</li>
-                                </ul>
-                            </p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Aug 2018 - May 2023</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Milford Marching Band</h3>
-                            <div class="subheading mb-3">Clarinet Section Leader</div>
-                            <p>
-                                <ul>
-                                    <li>Assisted and motivated musical and visual growth of a section of 12 clarinets, facilitated social gatherings, and arranged rides and desired locations for outings.</li>
-                                </ul>
-                            </p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">May 2022 - Nov 2022</span></div>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Skills-->
-            <section class="resume-section" id="skills">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
-                    <div class="subheading mb-3">Programming Languages & Tools</div>
-                    <ul class="list-inline dev-icons">
-                        <style>
-                            .custom-icon {
-                                width: 1em; 
-                                height: 1em;
-                                fill: gray; 
-                                margin-bottom: 10px;
-                            }
-                          </style>
-                    	<li class="list-inline-item"><i class="fab fa-python"></i></li>
-                    	<li class="list-inline-item"><i class="fab fa-java"></i></li>
-                        <img class="custom-icon" src="assets/cplusplus.svg" alt="C++ Icon">
-                        <img class="custom-icon" src="assets/sql.svg" alt="SQL Icon">
-                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                    </ul>
-                    <div class="subheading mb-3">Other Notable Skills</div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            ROS2
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Office 360 (Word, Excel, PowerPoint, Outlook)
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Fusion 360
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Unit Testing and Object Oriented Design
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Interests-->
-            <section class="resume-section" id="interests">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Interests</h2>
-                    <p>Apart from being a computer science student, I enjoy most of my time being outdoors. In the fall I march as a clarinet in the University of Cincinnati Marching Band, whilst also enjoying watching UC's football games from within Nippert Stadium. In the summer and fall, I enjoy kayaking on the Little Miami river. From spring-fall, I also enjoy to hike, backpack, and camp.</p>
-                    <p class="mb-0">When indoors, I enjoy reading, playing video games with friends, and playing and/or listening to music. I am currently enjoying listening to the genre jazz samba.</p>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Awards-->
-            <section class="resume-section" id="awards">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Awards & Certifications</h2>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            High School Diploma with Honors
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Milford Marching Band Outstanding Senior Award
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            VEX Robotics World Competition Innovate Award
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Numerous VEX Robotics Tournament Champions, Excellence Awards, and Design Awards 
-                        </li>
-                    </ul>
-                </div>
-            </section>
+            <p class="py-3">
+              My experience includes developing motion-planning pipelines, task-space controllers, and simulation-driven workflows for robotic arms and mobile platforms. I work extensively with ROS2, Gazebo, and modern C++/Python to design modular, maintainable systems that bridge theory and implementation. I'm particularly interested in intelligent autonomy, hybrid control strategies, and the engineering discipline required to deliver robust robotic behavior in complex environments.
+            </p>
+          </div>
         </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+        <p>I use these tools across robotics, simulation, and software engineering to build reliable, well-structured autonomous systems. My work spans ROS2 development, C++/Python engineering, CAD modeling, and modern DevOps practices that support reproducible, scalable robotics workflows.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row skills-content skills-animation">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>Python</span> <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>C++</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>ROS2</span> <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>Fusion 360</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Microsoft Office 365</span> <i class="val">95%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Azure DevOps</span> <i class="val">55%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <p>My academic path spans computer science and graduate-level robotics, with coursework in intelligent robotics, algorithms, data analysis, and systems engineering forming the foundation of my work in autonomous systems. I've applied this background in industry through data-driven engineering at CTI, where I built validated analytics and cross-functional reporting pipelines, and through earlier customer-facing roles that strengthened my communication, reliability, and operational discipline. Together, these experiences reflect a progression from strong computational fundamentals to hands-on engineering practice in robotics, software, and data-centric problem solving.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Master of Engineering, Robotics and Intelligent Autonomous Systems</h4>
+              <h5>Jan 2026 - May 2028</h5>
+              <p><em>University of Cincinnati, OH</em></p>
+              <p>GPA: 3.5</p>
+              <p>Relevent Coursework: Intelligent Robotics, Innovation and Design Thinking</p>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Bachelor of Science, Computer Science</h4>
+              <h5>Aug 2024 - April 2028</h5>
+              <p><em>University of Cincinnati, OH</em></p>
+              <p>GPA: 3.5</p>
+              <p>Relevent Coursework: Intro to Computer Systems, Design and Analysis of Algorithms</p>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Bachelor of Science, Computer Science Engineering</h4>
+              <h5>Aug 2023 - May 2024</h5>
+              <p><em>The Ohio State University, OH</em></p>
+              <p>GPA: 3.783</p>
+              <p>Relevant Coursework: Software I, Linear Algebra</p>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Intern</h4>
+              <h5>Jan 2025 - Jan 2026</h5>
+              <p><em>CTI Clinical Trial and Consulting, Covington, KY </em></p>
+              <ul>
+                <li>Built 20+ Tableau dashboards backed by custom SQL queries to visualize patient enrollment, adverse events, and study metrics for client-facing reports</li>
+                <li>Collaborated with cross-functional teams to enhance data accuracy and reporting efficiency.</li>
+                <li>Executed ~15 validation protocols to verify system outputs met study-specific compliance requirements.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Guest Advocate</h4>
+              <h5>Oct 2021 - Oct 2022</h5>
+              <p><em>Target, Milford, OH</em></p>
+              <ul>
+                <li>Provided exceptional customer service by scanning and bagging groceries for over 100 customers daily.</li>
+                <li>Ensured efficient Order Pickup service with an average delivery time of under 2 minutes.</li>
+                <li>Developed strong communication and time management skills while working in a fast-paced retail environment.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>My projects span autonomous robotics, simulation, and software engineering, with work ranging from ROS2 navigation and multi-DOF manipulation to data-driven systems and CAD-supported mechanical design. Each project reflects a focus on clear engineering structure, reproducible workflows, and the integration of perception, planning, and control. This portfolio highlights both academic and industry-informed work that demonstrates how I approach building reliable, intelligent systems.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-mdsa">Mechanical Design & System Analysis</li>
+            <li data-filter=".filter-programming">Programming</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mdsa">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/Adaptive Stroller Addon/cad-assembly.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Adaptive Stroller Addon</h4>
+                  <p>A motorized stroller attachment that can attach to 2 different strollers</p>
+                  <a href="assets/img/portfolio/Adaptive Stroller Addon/cad-assembly.jpg" title="Adaptive Stroller Addon" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="adaptive-stroller.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mdsa">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/VEX Robot Design/ri3d-cad.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>VEX Robotics Design</h4>
+                  <p>A robot designed and created to compete in the VEX Robotics High School competition</p>
+                  <a href="assets/img/portfolio/VEX Robot Design/ri3d-cad.jpg" title="VEX Robotics Robot" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="vex-robot-design.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-programming">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/E-Portfolio/EPortfolio.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>E-Portfolio</h4>
+                  <p>The website you are currently using.</p>
+                  <a href="assets/img/portfolio/E-Portfolio/EPortfolio.jpg" title="E-Portfolio" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="e-portfolio.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mdsa">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/Spacecraft-Robot/robot-capture-diagram.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Spacecraft-Robot Capture Simulation</h4>
+                  <p>A simulation in MATLAB Simscape Multibody of a robot capturing a free-floating object in space</p>
+                  <a href="assets/img/portfolio/Spacecraft-Robot/robot-capture-diagram.jpg" title="Spacecraft-Robot Capture Simulation" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="spacecraft-robot-capture.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-programming">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/VEX Robot Auton/robot-in-auton.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>VEX Robotics Autonomous</h4>
+                  <p>A 1-minute autonomous robot program that was tasked in scoring as many points as possible</p>
+                  <a href="assets/img/portfolio/VEX Robot Auton/robot-in-auton.jpg" title="VEX Robotics Robot Autonomous" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="vex-robot-auton.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
